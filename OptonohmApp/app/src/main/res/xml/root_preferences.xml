@@ -1,0 +1,80 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory app:title="@string/Optonohm_header">
+
+        <EditTextPreference
+            android:defaultValue="100"
+            app:key="beat_pulse_time"
+            app:persistent="true"
+            app:title="Beat pulse"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            android:defaultValue="100"
+            app:key="beat_brightness"
+            app:persistent="true"
+            app:title="Beat brightness"
+            app:useSimpleSummaryProvider="true"/>
+
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:defaultValue="@color/purple_200"
+            android:key="beat_color"
+            android:title="Beat Color"/>
+
+        <EditTextPreference
+            android:defaultValue="100"
+            app:key="start_beat_brightness"
+            app:persistent="true"
+            app:title="Start Beat Brightness"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            android:defaultValue="100"
+            app:key="start_beat_pulse_time"
+            app:persistent="true"
+            app:title="Start beat pulse time"
+            app:useSimpleSummaryProvider="true"/>
+
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:defaultValue="@color/purple_200"
+            android:key="start_beat_color"
+            android:title="Start Beat Color"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Bluetooth">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="bluetooth_Address"
+            android:title="Bluetooth Address"
+            app:persistent="true"
+            app:useSimpleSummaryProvider="true"
+            android:selectable="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Device">
+        <EditTextPreference
+            android:defaultValue=""
+            app:key="device_version"
+            app:title="Version"
+            app:useSimpleSummaryProvider="true"/>
+        <Preference
+            app:key="device_synchronize"
+            app:isPreferenceVisible="false"
+            app:title="Synchronize"/>
+        <Preference
+            app:key="device_bpm"
+            app:isPreferenceVisible="false"
+            app:title="BPM"/>
+        <Preference
+            app:key="device_mul"
+            app:isPreferenceVisible="false"
+            app:title="Mul"/>
+        <Preference
+            app:key="device_div"
+            app:isPreferenceVisible="false"
+            app:title="Div"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OptonohmApp</string>
+    <string name="tab_text_1">Data</string>
+    <string name="tab_text_2">Device</string>
+    <string name="tab_text_3">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="Optonohm_header">Optonohm</string>
+
+    <!-- Bicycle Preferences -->
+    <string name="PulsesPerRevultion_title">Pulses per revolution</string>
+    <string name="radius_title">Radius of wheel (mm)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
